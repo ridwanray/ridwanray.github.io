@@ -116,10 +116,11 @@
             <div class="form-main">
               <h3 class="title">
                 <span>Professional Biodata </span>
+                <h3 id="creating-displaying" class="text-success">
                 <br />
              
               </h3>
-              <form class="form" method="post" action="assets/mail/mail.php">
+              <form class="form" id="formData">
                 <div class="row">
                   <div class="col-lg-6 col-12">
                     <div class="form-group">
@@ -240,6 +241,13 @@
     <!-- ========================= JS here ========================= -->
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
+       <script>
+       document.getElementById("formData").addEventListener("submit", function(e){
+       e.preventDefault();
+       document.getElementById("creating-displaying").innerText = "Data Submitted..."
+       })
+    </script>
    
   </body>
 </html>
